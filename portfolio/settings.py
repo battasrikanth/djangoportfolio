@@ -26,7 +26,7 @@ SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','sreekanthbatta.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','sreekanthbatta.pythonanywhere.com','.vercel.app','.now.sh']
 
 
 # Application definition
@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # Ensure the URL path ends with '/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Only include the 'static' folder
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets','staticfiles_build','static') 
 MEDIA_URL='/media/'
 MEDIA_ROOT =os.path.join(BASE_DIR,'media')
 
