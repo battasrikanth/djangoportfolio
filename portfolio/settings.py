@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # Ensure the URL path ends with '/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # Only include the 'static' folder
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets','staticfiles_build','static') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets','static') 
 MEDIA_URL='/media/'
 MEDIA_ROOT =os.path.join(BASE_DIR,'media')
 
